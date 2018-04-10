@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="my_device">#797979</color>
+    <color name="my_add_device">#0d309b</color>
+
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="indicator">#DE5130</color>
+    <color name="indicator_uncheck">#FF222222</color>
+
+    <color name="text_blue">#bfbfbf</color>
+    <color name="login">#FFE4E4E4</color>
+    <color name="login_text">#FF6072AF</color>
+    <color name="title">#38ADF8</color>
+    <color name="white">#fff</color>
+    <color name="register">#5658c9</color>
+    <color name="unSelectColor">#000000</color>
+    <color name="SelectColor">#4b5cc4</color>
+    <color name="elct_back">#44B4F4</color>
+    <color name="map_time">#bcbcbc</color>
+
+    <!-- 绑定、注册 -->
+    <color name="text_pink">#fb1456</color>
+    <color name="et_white">#d8d8d8</color>
+    <color name="text_grey">#F9F9F9</color>
+    <color name="the_main_color">#28282b</color>
+    <color name="black">#000000</color>
+
+
+    <!-- 二维码扫描 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="btn">#09ABFE</color>
+    <color name="tou_black_mask">#12000000</color>
+    <color name="gray_ccc">#999999</color>
+    <color name="gray_eee">#F5F5F5</color>
+    <color name="longbaobao_background_write">#F7F7F7</color>
+    <color name="transparent">#00000000</color>
+    <color name="longbaobao_deep_gray">#333333</color>
+    <color name="gray_ddd">#DDD</color>
+    <color name="longbaobao_message_red">#FF3817</color>
+    <color name="longbaobao_light_gray">#999999</color>
+    <color name="rz">#0093DD</color>
+    <color name="grzx_rz">#B7B7B7</color>
+    <color name="tou_black_mask_ripple">#20000000</color>
+    <color name="main_background_color">#c3c6ce</color>
+    <color name="qq_red">#ff0000</color>
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="text_main_color">#bdbdbd</color>
+    <color name="text_hind_color">#767980</color>
+    <color name="application_of_the_base_color">#f3f6f9</color>
+    <color name="application_of_color">#487aed</color>
+    <color name="application_of_colorss">#331e90ff</color>
+    <color name="application_of_colors">#66487aed</color>
+    <color name="small_talk">#2f3139</color>
+    <color name="small_ele">#e2e5eb</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="gary">#898989</color>
+    <color name="Color_Blue_Deep">#00C0EF</color>
+    <color name="Color_RecommandBackground">#0078d6</color>
+
+    <!-- 手机设置 -->
+    <color name="setting_grey">#686868</color>
+
+    <color name="setting_status">#efefef</color>
+
+    <color name="address_detail">#7c7c7c</color>
+    <color name="address">#b5b5b5</color>
+    <color name="location">#FFD1D1D1</color>
+    <color name="add_device">#565656</color>
+    <color name="phone_cost_green">#66CD00</color>
+
+    <color name="send_btn">#2d2d2d</color>
+    <color name="step_count">#4a4a4a</color>
+
+    <color name="font_text">#666666</color>
+    <color name="font_green">#43CD80</color>
+    <color name="lay_select">#E0E0E0</color>
+    <color name="lay_normal">#F0F0F0</color>
+    <color name="map_device">#5659ca</color>
+    <color name="map_device2" >#616161</color>
+</resources>

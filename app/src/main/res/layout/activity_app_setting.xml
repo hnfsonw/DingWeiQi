@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hojy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/text_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_login"></include>
+
+
+    <LinearLayout
+        android:id="@+id/ll_push"
+        android:background="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="18dp"
+            android:layout_gravity="center"
+            android:text="@string/receive_push_message"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+
+        <com.suke.widget.SwitchButton
+            hojy:sb_checked="true"
+            hojy:sb_checked_color="@color/register"
+            hojy:sb_checkline_color="@color/register"
+            hojy:sb_uncheckcircle_color="@color/white"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/switch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/tv_push_switch"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/grzx_rz"
+            />
+    </LinearLayout>
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:background="@drawable/home_shape_white_selector"
+        android:id="@+id/lt_change_password"
+        hojy:isshow ="false"
+        hojy:right="true"
+        hojy:title="@string/change_the_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:background="@drawable/home_shape_white_selector"
+        android:id="@+id/lt_clear_the_cache"
+        hojy:text="true"
+        hojy:attribute="0.0MB"
+        hojy:bb="#242424"
+        hojy:title="@string/clear_the_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:background="@drawable/home_shape_white_selector"
+        android:id="@+id/lt_check_version_update"
+        hojy:text="true"
+        hojy:bb="@color/register"
+        hojy:attribute="X1.01"
+        hojy:title="@string/check_the_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:text="@string/the_current_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#979797"
+            android:textSize="12sp"
+            android:visibility="visible"
+            android:id="@+id/tv_current_account"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:textColor="@color/register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/app_setting_btn"
+        android:id="@+id/btn_log_out"
+        android:text="@string/log_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Button>
+</LinearLayout>

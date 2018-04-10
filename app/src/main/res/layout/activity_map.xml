@@ -1,0 +1,346 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@color/viewfinder_mask"
+            android:layout_width="match_parent"
+            android:layout_height="22dp" />
+    </RelativeLayout>
+    <android.support.v7.widget.Toolbar
+        android:paddingTop="8dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <LinearLayout
+                android:background="@drawable/home_shape_white_selector"
+                android:id="@+id/ll_back"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/ll_switch_baby"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/register"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:background="@drawable/home_shape_white_selector"
+                android:layout_centerVertical="true"
+                android:id="@+id/rl_refresh"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    android:layout_marginRight="15dp"
+                    android:src="@mipmap/map_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.amap.api.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"/>
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:id="@+id/ll_lontion"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentTop="true"
+            android:background="@mipmap/map_line"
+            >
+
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_location"
+                android:src="@mipmap/map_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/ll_address"
+                android:layout_toRightOf="@id/iv_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:visibility="gone"
+                    android:paddingTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_location_information"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_address"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="11231"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="111"
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/map_time"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_toRightOf="@id/iv_location"
+                android:layout_below="@id/ll_address"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="@string/latest_time"
+                    android:visibility="gone"
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="111"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_map_type"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_lontion"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="12dp"
+            >
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:background="@mipmap/map_satellite"
+                android:id="@+id/cb_map_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/LocationType_CheckBox"
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:text="@string/satellite_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_alignParentBottom="true"
+          >
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_above="@id/ll_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/map_amplification"
+            >
+
+            <TextView
+                android:background="@drawable/home_shape_white_selector"
+                android:id="@+id/add_zoom"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="+"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:src="@mipmap/vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"/>
+            <TextView
+                android:background="@drawable/home_shape_white_selector"
+                android:id="@+id/narrow_zoom"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="-"
+                android:layout_width="34dp"
+                android:layout_height="34dp"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_navigation"
+            android:orientation="vertical"
+            android:layout_above="@id/ll_text"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@mipmap/map_navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:text="@string/navigation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/ll_history"
+            android:orientation="vertical"
+            android:layout_above="@id/ll_navigation"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="16dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@mipmap/map_history"
+                android:id="@+id/btn_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:text="@string/history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll_electronic_fence"
+            android:layout_above="@id/ll_history"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="16dp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:background="@mipmap/map_security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:text="@string/the_safety_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

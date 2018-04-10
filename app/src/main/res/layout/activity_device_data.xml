@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:background="@mipmap/device_data"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/device_user"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/longbaobao_background_write"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_launcher2"
+            />
+
+
+        <TextView
+            android:textColor="#b1b1b1"
+            android:layout_marginLeft="20dp"
+            android:text="@string/baby_name"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:src="@mipmap/vertical"
+            />
+
+
+        <com.hojy.bracelet.ui.view.LastInputEditText
+            android:layout_marginLeft="20dp"
+            android:id="@+id/et_baby_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/enter_the_baby_nickname"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="@color/the_main_color"
+            android:textColorHint="@color/et_white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:textSize="14sp"
+        android:layout_margin="30dp"
+        android:background="@mipmap/login_btn"
+        android:id="@+id/btn_complete"
+        android:text="@string/binding_user"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

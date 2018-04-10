@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/text_grey"
+    xmlns:hojy="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/include_login"/>
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edge_shape_white_selector"
+        android:id="@+id/lt_device_message"
+        hojy:isshow ="false"
+        hojy:right="true"
+        hojy:title="@string/device_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:background="@drawable/edge_shape_white_selector"
+        android:id="@+id/lt_binding_unbundling"
+        hojy:isshow ="false"
+        hojy:right="true"
+        hojy:title="@string/binding_unbundling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+    <LinearLayout
+        android:background="@drawable/home_shape_white_selector"
+        android:visibility="visible"
+        android:id="@+id/ll_positioning_mode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="@string/positioning_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></View>
+
+        <TextView
+            android:id="@+id/tv_location_style"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/iv_regiht"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/regiht_"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/text_main_color"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edge_shape_white_selector"
+        hojy:isshow ="true"
+        hojy:right="false"
+        android:id="@+id/lt_heart_rate_"
+        hojy:title="@string/heart_rate_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:visibility="gone"
+        android:background="@drawable/edge_shape_white_selector"
+        android:id="@+id/lt_alarm_clock"
+        hojy:isshow ="false"
+        hojy:right="true"
+        hojy:title="@string/alarm_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        hojy:text="true"
+        hojy:bb="#8e8f8f"
+        hojy:attribute="X1.01"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edge_shape_white_selector"
+        hojy:isshow ="false"
+        hojy:right="true"
+        android:id="@+id/lt_font_size"
+        hojy:title="@string/the_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+
+    <com.hojy.bracelet.ui.view.LinearTvView
+        android:background="@drawable/edge_shape_white_selector"
+        hojy:text="true"
+        hojy:bb="#8e8f8f"
+        hojy:attribute="X1.01"
+        hojy:isshow ="false"
+        hojy:right="true"
+        android:id="@+id/lt_device_version"
+        hojy:title="@string/device_viersion_up_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.hojy.bracelet.ui.view.LinearTvView>
+
+</LinearLayout>

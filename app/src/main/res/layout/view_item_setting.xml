@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hojy="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/home_shape_white_selector"
+        android:id="@+id/ll_baby_card"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_imageview"
+            android:layout_marginLeft="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:text="@string/baby_name_card"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></View>
+
+        <com.suke.widget.SwitchButton
+            android:visibility="gone"
+            hojy:sb_checked="true"
+            hojy:sb_checked_color="@color/register"
+            hojy:sb_checkline_color="@color/register"
+            hojy:sb_uncheckcircle_color="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            android:id="@+id/iv_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/ic_launcher2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"/>
+
+
+        <TextView
+            android:layout_marginRight="15dp"
+            android:id="@+id/check_the_update"
+            android:textColor="@color/application_of_color"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_regiht"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/regiht_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/grzx_rz"
+            />
+    </LinearLayout>
+</LinearLayout>
